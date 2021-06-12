@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
 
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>NuCamp: A Better Way To Camp</title>
+    <title>NuCamp: A Better Way To Camp by Soo Hwangbo</title>
 </head>
 
 <body>
@@ -86,12 +86,17 @@
                 <h2>Featured Campsites</h2>
             </div>
             <div class="col">
-                <h3>React Lake Campground</h3>
-                <p class="d-none d-sm-block">
-                    Nestled in the foothills of the Chrome Mountains, this
-                    campground on the shores of the pristine React Lake is a
-                    favorite for fly fishers.
-                </p>
+                <div class="media">
+                    <div class="media-body align-self-center">
+                        <h3>React Lake Campground</h3>
+                        <p class="d-none d-sm-block">
+                            Nestled in the foothills of the Chrome Mountains, this
+                            campground on the shores of the pristine React Lake is a
+                            favorite for fly fishers.
+                        </p>
+                    </div>
+                    <img class="d-flex ml-3 img-thumbnail" src="/img/react-lake-thumb.jpg">
+                </div>
             </div>
         </div>
 
@@ -108,6 +113,51 @@
                             Bootstrap Outfitters supplies you with gear you
                             need at prices you can't beat.
                         </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-content">
+            <div class="col-sm-6 mx-auto">
+                <div class="card">
+                    <h3 class="bg-info text-light card-header">
+                        Reserve a Campsite
+                    </h3>
+                    <div class="card-body">
+                        <form>
+                            <div class="row form-group">
+                                <div class="col-sm-6">
+                                    <label class="col-form-label" for="numCampers">Number of Campers</label>
+                                </div>
+                                <div class="col-sm-6">
+                                    <select name="numCampers" class="col form-select" id="numCampers">
+                                        <option selected>Select</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label for="date col-form-label">Date</label>
+                                </div>
+                                <div class="col-sm-6">
+                                    <input class="form-control col-form-label" type="date" name="date" id="date"
+                                        placeholder="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col form-group">
+                                    <button class="btn-primary" type="submit">
+                                        Search
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
