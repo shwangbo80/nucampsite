@@ -4,7 +4,7 @@ body {
 h1,
 h2,
 h3 {
-  font-family: header-font; }
+  font-family: "Lobster", cursive; }
 
 h2 {
   color: header-primary; }
